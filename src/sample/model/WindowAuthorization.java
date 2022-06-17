@@ -25,3 +25,4 @@ public class WindowAuthorization extends Application {
         start(RAM.window);
     }
 }
+    
