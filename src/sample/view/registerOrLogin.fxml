@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ControllerRegisterOrLogin">
+   <children>
+      <Label prefHeight="120.0" prefWidth="424.0" text="Вы желаете войти или зарегистрироваться?">
+         <FlowPane.margin>
+            <Insets />
+         </FlowPane.margin>
+         <padding>
+            <Insets bottom="100.0" />
+         </padding>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonAuthorization" mnemonicParsing="false" onAction="#buttonAuthorizationPress" prefHeight="21.0" prefWidth="273.0" text="Авторизация">
+         <FlowPane.margin>
+            <Insets bottom="10.0" />
+         </FlowPane.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonRegistration" mnemonicParsing="false" onAction="#buttonRegistrationPress" prefHeight="25.0" prefWidth="275.0" text="Регистрация">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</FlowPane>
