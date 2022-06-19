@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ControllerRegistration">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.0" minWidth="10.0" prefWidth="127.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="485.0" minWidth="10.0" prefWidth="190.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="485.0" minWidth="0.0" prefWidth="159.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="189.0" minHeight="10.0" prefHeight="127.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="189.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="189.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="215.0" minHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="172.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="108.0" prefWidth="126.0" text="Регистрация" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegistration" mnemonicParsing="false" onAction="#onRegistration" prefHeight="56.0" prefWidth="160.0" text="Зарегестрироваться" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="71.0" text="Логин" textAlignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="98.0" text="Пароль" GridPane.rowIndex="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" prefHeight="37.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="loginField" prefHeight="37.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label prefHeight="58.0" prefWidth="126.0" text="Имя клиента" GridPane.rowIndex="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameClientField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="backButton" alignment="BASELINE_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#pressBackButton" text="Назад" GridPane.rowIndex="4">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>
