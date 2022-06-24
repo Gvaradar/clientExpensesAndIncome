@@ -12,7 +12,7 @@ public class WindowRegistration extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("view/registerOrLogin.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../view/registration.fxml"));
         RAM.window.setTitle("Registration");
         RAM.window.setScene(new Scene(root, 600, 400));
         RAM.window.show();

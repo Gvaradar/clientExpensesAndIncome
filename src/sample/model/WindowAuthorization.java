@@ -11,7 +11,7 @@ public class WindowAuthorization extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("view/authorization.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../view/authorization.fxml"));
         RAM.window.setTitle("Authorization");
         RAM.window.setScene(new Scene(root, 600, 400));
         RAM.window.show();

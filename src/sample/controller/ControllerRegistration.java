@@ -5,8 +5,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import jdk.nashorn.internal.ir.RuntimeNode;
-import org.omg.CORBA.Request;
+
 import sample.Main;
 import sample.model.RAM;
 
