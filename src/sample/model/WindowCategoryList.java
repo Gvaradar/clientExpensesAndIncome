@@ -43,11 +43,12 @@ public class WindowCategoryList extends  Application {
                 response += responseLine.trim();
             }
           response = response.substring(1,response.length()-1);
-            
+
             List<String> list = Arrays.asList(response.split(","));
 
             for (int i = 0; i < list.size(); i++) {
-
+                String temporary = list.get(i).substring(18,list.get(i).length()-2);
+                list.set(i,temporary);
                 System.out.println(list.get(i));
             }
 
