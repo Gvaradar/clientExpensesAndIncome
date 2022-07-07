@@ -20,7 +20,7 @@ public class ControllerRegisterOrLogin {
     public void buttonRegistrationPress() throws Exception {
         WindowRegistration windowRegistration = new WindowRegistration();
         windowRegistration.showWindow();
-        RAM.window.close();
+
     }
 
     @FXML
