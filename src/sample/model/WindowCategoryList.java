@@ -1,14 +1,17 @@
 package sample.model;
 
 import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
+
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
+import javafx.scene.control.MultipleSelectionModel;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
+
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -60,12 +63,25 @@ public class WindowCategoryList extends  Application {
 
             langsListView.setPrefSize(widht, height);
 
+            MultipleSelectionModel<String> langsSelectionModel = langsListView.getSelectionModel();
+
+            langsSelectionModel.selectedItemProperty().addListener(new ChangeListener<String>(){
+
+                public void changed(ObservableValue<? extends String> changed, String oldValue, String newValue){
+
+
+                    System.out.println(newValue);
+                }
+            });
+
             FlowPane root = new FlowPane(langsListView);
             Scene scene = new Scene(root, widht, height);
 
             primaryStage.setScene(scene);
             primaryStage.setTitle("CategoryList");
             primaryStage.show();
+
+
 
         }
 
